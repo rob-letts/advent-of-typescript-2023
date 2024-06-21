@@ -8,12 +8,12 @@ type PresentDeliveryList<T extends Object> = {
 
 /* Tests */
 type MixedBehaviorList = {
-  john: { behavior: 'good' };
-  jimmy: { behavior: 'bad' };
-  sara: { behavior: 'good' };
-  suzy: { behavior: 'good' };
-  chris: { behavior: 'good' };
-  penny: { behavior: 'bad' };
+  john: { behavior: "good" };
+  jimmy: { behavior: "bad" };
+  sara: { behavior: "good" };
+  suzy: { behavior: "good" };
+  chris: { behavior: "good" };
+  penny: { behavior: "bad" };
 };
 type test_MixedBehaviorTest_actual = PresentDeliveryList<MixedBehaviorList>;
 //   ^?
@@ -30,8 +30,8 @@ type test_MixedBehaviorTest = Expect<
 >;
 
 type Unrelated = {
-  hello: { hello: 'hello' };
-  world: { world: 'world' };
+  hello: { hello: "hello" };
+  world: { world: "world" };
 };
 type test_Unrelated_actual = PresentDeliveryList<Unrelated>;
 //   ^?
